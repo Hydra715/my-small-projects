@@ -1,2 +1,2 @@
 # my-small-projects
- My learning repository for quick browse
+ This repository holds very small projects that represent my way of learning new skills
