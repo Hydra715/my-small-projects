@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ToDo JS Native</title>
+  <link rel="stylesheet" href="./styles.css">
+ 
+</head>
+<body>
+  <div class="app">
+    <header class="header">
+      <h1>Список дел</h1>
+    </header>
+    <main class="content">
+      <form class="field" id='form'>
+        <input class="input" placeholder="Что надо сделать?" type="text" id="formInput" />
+      </form>
+      <ul class="list" id="list">
+      </ul>
+      <footer class="actions">
+        <div class="counts" id='counts'></div>
+        <div class="filter">
+          <button class="filterBtn active">Все</button>
+          <button class="filterBtn">Текущие</button>
+          <button class="filterBtn">Завершённые</button>
+        </div>
+        <button class="cleanAllComplited">Очистить</button>
+      </footer>
+    </main>
+    <footer class="footer">
+      <p>Чтобы редактировать запись<br>кликите дважды по ней</p>
+      <p>Написанно мной любимым</p>
+    </footer>
+  </div>
+
+  <template id="todoTpl">
+    <li class="item">
+          <label class="checkbox">
+            <input class="checkboxInput" type="checkbox" />
+            <span class="checkboxView"></span>
+          </label>
+          <h2 class="itemText">Сходить за хлебом</h2>
+          <div class="itemActions">
+            <button class="itemRemove">🗑️</button>
+          </div>
+      <input class="itemInput" type="text" value="" />
+        </li>
+  </template>
+
+   <script type="text/javascript" src="./main.js"></script>
+</body>
+</html>
+
+
+

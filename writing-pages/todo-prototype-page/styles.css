@@ -1,0 +1,232 @@
+:root {
+  --text-color: #333;
+  --header-color: #666;
+  --footer-color: #999;
+  --body-background-color: #dfdfdf;
+  --content-background-color: #fff;
+  --content-shadow: #0003;
+  --content-shadow-color: #000;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text-color: #efefef;
+    --header-color: #bbb;
+    --footer-color: #aaa;
+    --body-background-color: #333;
+    --content-background-color: #444;
+    --content-shadow: #0006;
+    --content-shadow-color: #000;
+  }
+}
+
+html {
+  font: menu;
+  font-size: 1px;
+}
+
+body {
+  background-color: var(--body-background-color);
+  color: var(--text-color);
+  margin: 0;
+  font-size: 16rem;
+}
+
+@media (max-width: 512px) {
+html {
+    font-size: calc(100vw / 512) !important;
+  }
+}
+
+.app {
+  width: 512rem;
+  margin: 0 auto;
+}
+
+.header h1 {
+  color: var(--header-color);
+  font-size: 80rem;
+  line-height: 120rem;
+  display: block;
+  margin: 32rem 0;
+  text-align: center;
+  white-space: nowrap;
+  font-weight: lighter;
+  letter-spacing: -.05em;
+}
+
+.footer {
+  margin: 48rem 0;
+  font-style: italic;
+  color: var(--footer-color);
+  text-align: center;
+  line-height: 16rem;
+  font-size: 12rem;
+}
+
+.content {
+  background: var(--content-background-color);
+  box-shadow: 0 10rem 50rem 5rem var(--content-shadow);
+  position: relative;
+}
+
+
+.content::after,
+.content::before {
+  content: '';
+  display: block;
+  background: var(--content-background-color);
+  position: absolute;
+  box-shadow: inset 0 2rem 3rem -3rem var(--content-shadow-color);
+  height: 6rem;
+  left: 8rem;
+  right: 8rem;
+  bottom: -6rem;
+}
+
+.content::before {
+  left: 16rem;
+  right: 16rem;
+  bottom: -12rem;
+}
+
+button, input, .input::placeholder {
+  color: inherit;
+  font: inherit;
+}
+
+.input, .itemInput, .itemText {
+  color: var(--text-color);
+  background: transparent;
+  border: 0;
+  display: block;
+  box-sizing: border-box;
+  height: 52rem;
+  line-height: 36rem;
+  font-size: 24rem;
+  width: 100%;
+  padding: 8rem 48rem 8rem;
+  margin: 0;
+  font-weight: normal;
+}
+
+.complited .itemText {
+  text-decoration: line-through;
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.item {
+  display: block;
+  align-items: center;
+  position: relative;
+}
+
+.item:not(.edited) .itemInput {
+  display: none;
+}
+
+.item.edited > *:not(.itemInput) {
+  display: none;
+}
+
+.item + .item {
+  border-top: 1px solid var(--footer-color)
+}
+
+.itemRemove {
+  position: absolute;
+  top: 18rem;
+  right: 10rem;
+  height: 24rem;
+  text-align: center;
+  font-size: 16rem;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.checkbox {
+  display: inline-block;
+  vertical-align: text-top;
+  position: relative;
+  height: 18rem;
+  width: 18rem;
+  z-index: 10;
+  position: absolute;
+  top: 18rem;
+  left: 15rem;
+}
+
+.checkboxInput {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
+  opacity: 0.006;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 30;
+  cursor: pointer;
+}
+
+.checkboxView {
+  border-radius: 2rem;
+  border: 2rem solid var(--text-color);
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: 20;
+}
+
+.checkboxView:before {
+  content: '';
+  height: 10rem;
+  width: 4rem;
+  border: 0 solid var(--text-color);
+  transform: rotate(45deg);
+  border-width: 0 2rem 2rem 0;
+  position: absolute;
+  left: 4rem;
+  top: 0rem;
+  opacity: 0;
+}
+
+.checkboxInput:checked + .checkboxView:before {
+  opacity: 1;
+}
+
+.actions {
+  border-top: 1px solid var(--footer-color);
+  font-size: 14rem;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 8rem;
+  display: flex;
+}
+
+.filterBtn, .cleanAllComplited {
+  cursor: pointer;
+  vertical-align: baseline;
+  background: transparent;
+  border: 1px solid #0000;
+  border-radius: 3rem;
+}
+
+.filterBtn.active {
+  cursor: default;
+  pointer-events: none;
+  border-color: var(--footer-color);
+}
