@@ -6,4 +6,7 @@
  ### writing-pages
  This folder is about me writing some stuff all by myself
  
+ Links to some of projects: https://my-small-projects.vercel.app/
+                            https://my-small-projects-cibq.vercel.app/
+ 
  Have a great time exploring!
