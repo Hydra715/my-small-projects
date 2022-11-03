@@ -6,4 +6,5 @@
  ### writing-pages
  This folder is about me writing some stuff all by myself
  
+ Links to projects: https://my-small-projects.vercel.app/
  Have a great time exploring!
