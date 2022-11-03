@@ -1,0 +1,33 @@
+html {
+  font: menu;
+  font-size: 16px;
+  --viewbox-size: calc(100vw - 64px);
+}
+
+@media (orientation: landscape) {
+  html {
+  --viewbox-size: calc(100vh - 64px);
+}
+}
+
+body {
+  background-color: #000;
+  color: #FFF;
+  margin: 0;
+}
+
+#app {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#screen {
+  width: var(--viewbox-size);
+  height: var(--viewbox-size);
+  background-color: #222;
+  image-rendering: pixelated;
+  outline: 8px solid #fff;
+}
