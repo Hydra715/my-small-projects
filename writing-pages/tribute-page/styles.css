@@ -1,0 +1,121 @@
+ * {
+    font-size: 16px;
+ }
+ 
+ 
+ html{
+   font-style: sans-serif;
+   background-color: rgba(79, 79, 79, 0.115);
+ }
+
+ body{
+   margin: 0;
+ }
+
+ h1 {
+   text-align: center;
+   font-size: 2.5rem;
+   margin: 5px auto;
+   padding: 0; 
+ }
+
+ header {
+   background-color: rgba(10, 10, 214, 0.289);
+ }
+
+ header > p, .portrait-wrapper > p {
+   text-align: center;
+   margin: 5px auto;
+   padding-bottom: 10px;
+ }
+
+ main {
+    background-color: rgba(40, 36, 125, 0.253);
+    margin-top: 5px;
+    padding: 10px;
+ }
+ 
+
+ .portrait-wrapper {
+   max-width: 1000px;
+   background-color: rgba(79, 79, 79, 0.115);
+   margin: 0px auto;
+ }
+ 
+ #image {
+   display: block;
+   width: 100%;
+   max-width: 100%;
+   height: auto;
+   object-fit: cover;
+   border-radius: 10px;
+   margin: 0 auto;
+   padding: 10px 0;
+ }
+
+ #img-caption p{
+   text-align: center;
+   padding-bottom: 10px;
+   margin: 0 auto;
+   font-weight: 500;
+   font-size: 1.25rem;
+ }
+
+ .main-content {
+   display:flex;
+   flex-direction: column;
+   align-items: center;
+ }
+
+ .main-content h2{
+   font-size: 1.5rem;
+   margin: 5px auto;
+
+ }
+
+ .main-content ul{
+   margin-top:0;
+ }
+
+ li {
+   max-width: 400px;
+ }
+
+ li > p {
+   max-width: 400px;
+   color: #333;
+ }
+
+ footer > p {
+   text-align: center;
+   margin: 0 auto;
+   padding: 8px;
+   background-color: rgba(40, 36, 125, 0.253);
+ }
+
+ .quote {
+   max-width: 400px;
+   text-align: center;
+   margin: 0 auto;
+   
+ }
+
+ .quote p{
+   font-size: 1.25rem;
+ }
+
+ .wikipedia-link{
+   font-weight: bold;
+   margin: 5px auto;
+   text-align: center;
+ }
+
+ .wikipedia-link p,a{
+   font-size: 1.25rem;
+ }
+
+ .divider {
+   border-bottom: 2px solid #888989;
+   margin: 2px 0;
+   clear: right;
+ }
