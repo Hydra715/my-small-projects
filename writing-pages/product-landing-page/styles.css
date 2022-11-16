@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+#header {
+    height: 10vh;
+    width: 100%;
+    padding-bottom: 5px;
+    position: fixed;
+    background-color: #eee;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#header-img {
+    max-height: 100px;
+    max-width: 50px;
+    margin-right: 40vw;
+}
+
+#nav-bar a{
+    list-style: none;
+}
+
+body {
+    background-color:white;
+    margin: 0;
+    padding: 0;
+}
