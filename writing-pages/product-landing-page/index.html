@@ -11,7 +11,7 @@
 <body>
     <main>
         <header id="header">
-            <img id="header-img" src='https://job-search.ru/wp-content/uploads/2020/05/remont-el-knig-dns.jpg' />
+            <img id="header-img" src='https://cdn-icons-png.flaticon.com/512/7096/7096574.png' />
             <nav id="nav-bar">
                 <div class="nav-wrapper">
                     <a class="nav-link" href="#properties">Properties</a>
@@ -20,27 +20,103 @@
                 </div>
             </nav>
         </header>
-        <section class="backlink">
-            <form id="form" action="https://www.freecodecamp.com/email-submit" target="_blank">
-                <input type='email' id='email' name="email" placeholder="Enter your email adress..." />
-                <input id="submit" type="submit">Submit</input>
-            </form>
-        </section>
+        <div class="container">
+            <section class="backlink">
+                <h1>Garage-crafted, my masterpieces!</h1>
+                <form id="form" action="https://www.freecodecamp.com/email-submit" target="_blank">
+                    <input type='email' id='email' name="email" placeholder="Enter your email adress..." />
+                    <input id="submit" type="submit" value='Submit!' />
+                </form>
+            </section>
 
-        <section id="properties">
+            <section id="properties">
+                <div class="property">
+                    <div class="icon">
+                        <img class='icon-img' src='https://cdn-icons-png.flaticon.com/512/4769/4769153.png' />
+                    </div>
+                    <div class="about">
+                        <h2>Premium Quality</h2>
+                        <p>Our masters are so cute and cool, just let them show what they can do!</p>
+                    </div>
+                </div>
+                <div class="property">
+                    <div class="icon">
+                        <img class='icon-img' src='https://cdn-icons-png.flaticon.com/512/4198/4198293.png' />
+                    </div>
+                    <div class="about">
+                        <h2>Our aim is you</h2>
+                        <p>We manage to get our product to you as fast as possible. Just let us know you want it!</p>
+                    </div>
+                </div>
+                <div class="property">
+                    <div class="icon">
+                        <img class='icon-img' src='https://cdn-icons-png.flaticon.com/512/4431/4431886.png' />
+                    </div>
+                    <div class="about">
+                        <h2>High resolition</h2>
+                        <p>Secret chinese technology and strong russian vodka provided the invention of 1024K display! Check that out ASAP!</p>
+                    </div>
+                </div>
+                <div class="property">
+                    <div class="icon">
+                        <img class='icon-img' src='https://cdn-icons-png.flaticon.com/512/6845/6845066.png' />
+                    </div>
+                    <div class="about">
+                        <h2>Artificial intelligence</h2>
+                        <p>Our AI can do you a coffee of work for you, while you will watch your favourite youtube videos!</p>
+                    </div>
+                </div>
 
-        </section>
+            </section>
 
-        <section class="video-wrapper">
-            <video id="video" src="https://www.youtube.com/watch?v=6x7zyUk2aZs"></video>
+            <section class="video-wrapper">
+                <video controls poster="runner-poster.jpg" id="video">
+                    <source src='blade-runner-short.mp4' type="video/mp4"/>
+                    Ваш браузер не поддерживает встроенные видео.
+                </video>
 
-        </section>
-        <section id="product-cards">
-
-        </section>
+            </section>
+            <section id="product-cards">
+                <div class="card">
+                    <p>R2D2</p>
+                    <h2>$300</h2>
+                    <ol>
+                        <li>Your best friend</li>
+                        <li>Can make C3PO</li>
+                        <li>Opens any door</li>
+                    </ol>
+                    <button>Select</button>
+                </div>
+                <div class="card">
+                    <p>VALLE</p>
+                    <h2>$300</h2>
+                    <ol>
+                        <li>Flies around</li>
+                        <li>Accidetly finds EVA-bot</li>
+                        <li>Can make a trash cube to you</li>
+                    </ol>
+                    <button>Select</button>
+                </div>
+                <div class="card">
+                    <p>ThatGirlFromMovie</p>
+                    <h2>$1999</h2>
+                    <ol>
+                        <li>Your E-girl</li>
+                        <li>Makes everone around jelous</li>
+                        <li>You dont need any friends now</li>
+                    </ol>
+                    <button>Select</button>
+                </div>
+            </section>
+        </div>
     </main>
     <footer>
-
+        <ul>
+            <li>Terms</li>
+            <li>Contact developer</li>
+            <li>License</li>
+        </ul>
+        <p>Copyright 2022, Blade Runner</p>
     </footer>
 </body>
 
