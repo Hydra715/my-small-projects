@@ -1,0 +1,18 @@
+html {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+#welcome-section{
+    height: 100vh;
+    background-color: black;
+}
+
+@media only screen and (max-width: 1000px) {
+
+}
